@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id" id="html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio - Fetimani</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body.dark-mode {
+      background-color: #121212;
+      color: white;
+    }
+
+    body.dark-mode .text-gray-700 {
+      color: #e0e0e0;
+    }
+
+    body.dark-mode .bg-white {
+      background-color: #333;
+    }
+
+    body.dark-mode .bg-yellow-300 {
+      background-color: #ffb84d;
+    }
+
+    body.dark-mode .bg-blue-900 {
+      background-color: #1e3a8a;
+    }
+
+    body.dark-mode .border-gray-300 {
+      border-color: #444;
+    }
+
+    body.dark-mode .text-yellow-400 {
+      color: #ffd700;
+    }
+
+    body.dark-mode .text-gray-600 {
+      color: #ffd700;
+    }
+
+    body.dark-mode .text-gray-800  {
+      color: #f6f5f0;
+    }
+
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800" id="body">
+
+  <nav class="flex justify-between items-center p-6 bg-white shadow-md sticky top-0 z-50">
+    <div class="text-2xl font-bold text-blue-900 animate-pulse">Portofolio</div>
+    <div class="hidden md:flex gap-8 text-gray-700 nav-links">
+      <a href="#home" class="hover:text-yellow-400 transition duration-300">home</a>
+      <a href="#about" class="hover:text-yellow-400 transition duration-300">Tentang</a>
+      <a href="#hoby" class="hover:text-yellow-400 transition duration-300">Hobi</a>
+      <a href="#skills" class="hover:text-yellow-400 transition duration-300">Skills</a>
+      <a href="#projects" class="hover:text-yellow-400 transition duration-300">Projek</a>
+      <a href="#kontak" class="hover:text-yellow-400 transition duration-300">Kontak</a>
+    </div>
+    <div class="md:hidden nav-toggle">
+      <div class="hamburger space-y-2">
+        <div class="w-8 h-1 bg-gray-800"></div>
+        <div class="w-8 h-1 bg-gray-800"></div>
+        <div class="w-8 h-1 bg-gray-800"></div>
+      </div>
+    </div>
+    <button class="p-2 bg-gray-800 text-white dark:text-black dark:bg-white rounded-full" onclick="toggleDarkMode()">
+      <i class="fas fa-moon dark:hidden"></i>
+      <i class="fas fa-sun hidden dark:block"></i>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-blue-900 text-white text-center py-24 px-6 animate-fade-up">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4 text-teal-400">Halo Semua 👋</h1>
+    <h2 class="text-5xl md:text-7xl font-bold mb-4">Saya Fetimani Tafonao</h2>
+    <p class="text-xl md:text-2xl mb-6">Saya adalah Mahasiswa Sistem Informasi di Universitas Trunojoyo Madura</p>
+    <a href="#projects" class="bg-yellow-400 text-blue-900 font-bold py-3 px-6 rounded-full hover:bg-yellow-300 transition duration-300">Lihat Projek</a>
+  </section>
+
+  <!-- Tentang Saya -->
+  <section id="about" class="p-10">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center space-y-6 md:space-x-12 md:space-y-0">
+      <div class="w-64 h-64 overflow-hidden rounded-full shadow-lg">
+        <img src="saya.jpg" alt="Foto Profil" class="w-full h-full object-cover hover:scale-105 transition duration-500 ease-in-out">
+      </div>
+      <div class="flex-1 text-center md:text-left">
+        <h2 class="text-3xl font-bold mb-6 text-blue-900 dark:text-white">Tentang Saya</h2>
+        <p class="text-gray-700 leading-relaxed text-justify dark:text-white">
+          Saya merupakan mahasiswa Program Studi Sistem Informasi di Universitas Trunojoyo Madura. Saat ini, saya berada di semester 2 dan aktif dalam berbagai kegiatan organisasi, seperti Public Speaking dan HIMASI. Saya memiliki minat besar di bidang teknologi, khususnya dalam pengembangan web dan aplikasi berbasis Java.  
+          Melalui portofolio ini, saya berharap dapat menampilkan hasil karya dan pengalaman yang telah saya peroleh.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hobi -->
+  <section id="hoby" class="p-10 bg-gray-100 dark:bg-gray-800">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8 text-blue-900 dark:text-white">Hobi Saya</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Berenang -->
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:scale-105 transform transition duration-300">
+          <i class="fas fa-swimmer text-4xl text-teal-500 mb-4"></i>
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Berenang</h3>
+          <p class="text-gray-600 dark:text-gray-300 mt-2">Saya suka berenang untuk menjaga kesehatan dan menghilangkan stres.</p>
+        </div>
+        <!-- Basket -->
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:scale-105 transform transition duration-300">
+          <i class="fas fa-basketball-ball text-4xl text-orange-500 mb-4"></i>
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Basket</h3>
+          <p class="text-gray-600 dark:text-gray-300 mt-2">Basket adalah olahraga favorit saya sejak sekolah menengah.</p>
+        </div>
+        <!-- Game -->
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg hover:scale-105 transform transition duration-300">
+          <i class="fas fa-gamepad text-4xl text-purple-500 mb-4"></i>
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Main Game</h3>
+          <p class="text-gray-600 dark:text-gray-300 mt-2">Saya suka bermain game untuk hiburan dan meningkatkan konsentrasi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ijazah -->
+  <section class="bg-gray-50 p-10">
+    <div class="max-w-6xl mx-auto text-center mt-12">
+      <h2 class="text-3xl font-bold mb-8 text-blue-900">Ijazah Saya</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow hover:scale-105 hover:shadow-xl transition transform duration-300 animate-fade-up">
+          <a href="https://drive.google.com/drive/folders/1llW-iOuH_2Yuw6sM3hlqqdLomD53GrYS" target="_blank">
+            <img src="sd.jpg" alt="SD" class="w-96 h-auto rounded-lg mx-auto" loading="lazy">
+          </a>
+          <p class="mt-2 text-sm text-gray-700">(2019-2021)</p>
+          <p class="text-xs text-gray-500">SDN HILITOBARA TELUKDALAM</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:scale-105 hover:shadow-xl transition transform duration-300 animate-fade-up">
+          <a href="https://drive.google.com/drive/folders/1llW-iOuH_2Yuw6sM3hlqqdLomD53GrYS" target="_blank">
+            <img src="smp.jpg" alt="SMP" class="w-96 h-auto rounded-lg mx-auto" loading="lazy">
+          </a>
+          <p class="mt-2 text-sm text-gray-700">(2021-2023)</p>
+          <p class="text-xs text-gray-500">SMP NEGERI 2 TELUKDALAM</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:scale-105 hover:shadow-xl transition transform duration-300 animate-fade-up">
+          <a href="https://drive.google.com/drive/folders/1llW-iOuH_2Yuw6sM3hlqqdLomD53GrYS" target="_blank">
+            <img src="sma.jpg" alt="SMA" class="w-96 h-auto rounded-lg mx-auto" loading="lazy">
+          </a>
+          <p class="mt-2 text-sm text-gray-700">(2022-2024)</p>
+          <p class="text-xs text-gray-500">SMA NEGERI 1 TELUKDALAM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="p-10 bg-white">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8 text-blue-900 animate-fade-up">Skills</h2>
+      <div class="flex flex-wrap justify-center gap-6">
+        <span class="bg-yellow-300 px-4 py-2 rounded-full">HTML</span>
+        <span class="bg-yellow-300 px-4 py-2 rounded-full">CSS</span>
+        <span class="bg-yellow-300 px-4 py-2 rounded-full">JavaScript</span>
+        <span class="bg-yellow-300 px-4 py-2 rounded-full">Java</span>
+        <span class="bg-yellow-300 px-4 py-2 rounded-full">React</span>
+        <span class="bg-yellow-300 px-4 py-2 rounded-full">Node.js</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="p-10 bg-gray-50">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8 text-blue-900">Projek Terbaru</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow hover:scale-105 transition duration-300">
+          <img src="noa.png" alt="Projek 1" class="w-full h-48 object-cover mb-4" loading="lazy">
+          <h3 class="text-xl font-semibold text-blue-900">Website Restoran</h3>
+          <p class="text-gray-600">Website restoran untuk 'Noa by Tafonao', menggunakan HTML dan CSS.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:scale-105 transition duration-300">
+          <img src="hung.png" alt="Projek 2" class="w-full h-48 object-cover mb-4" loading="lazy">
+          <h3 class="text-xl font-semibold text-blue-900">Hotel</h3>
+          <p class="text-gray-600">Aplikasi web untuk menjelajahi makanan dan kamar hotel.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:scale-105 transition duration-300">
+          <img src="APB.jpg" alt="Projek 3" class="w-full h-48 object-cover mb-4" loading="lazy">
+          <h3 class="text-xl font-semibold text-blue-900">Analisa Proses Bisnis</h3>
+          <p class="text-gray-600">Analisa proses bisnis UMKM kopi dengan BPMN.</p>
+        </div>
+        <div class="flex justify-center items-center"></div>
+        <div class="bg-white p-6 rounded-lg shadow hover:scale-105 transition duration-300">
+          <img src="po.png" alt="Projek 4" class="w-full h-48 object-cover mb-4" loading="lazy">
+          <h3 class="text-xl font-semibold text-blue-900">Website Portofolio</h3>
+          <p class="text-gray-600">Website portofolio pribadi dengan fitur dark mode, animasi, dan responsif menggunakan Tailwind CSS.</p>
+        </div>
+      </div> 
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="p-10 bg-gray-50">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8 text-blue-900">Kontak</h2>
+      <form action="https://formspree.io/f/yourID" method="POST" class="space-y-4">
+        <input type="text" name="name" placeholder="Nama Anda" class="w-full p-3 border-2 border-gray-300 rounded-md">
+        <input type="email" name="email" placeholder="Email Anda" class="w-full p-3 border-2 border-gray-300 rounded-md">
+        <textarea name="message" placeholder="Pesan Anda" class="w-full p-3 border-2 border-gray-300 rounded-md" rows="4"></textarea>
+        <button type="submit" class="bg-yellow-400 text-blue-900 py-3 px-6 rounded-full hover:bg-yellow-300 transition duration-300">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+    <!-- Sosial Media -->
+    <section id="contact" class="p-10 bg-gray-50">
+    <section id="sosial" class="bg-white py-16 text-center">
+      <h3 class="text-2xl font-bold text-blue-900 mb-4">Temui Saya di Sosial Media</h3>
+      <div class="flex justify-center space-x-6 text-3xl">
+        <a href="https://github.com/Fetimani" target="_blank" class="text-gray-800 hover:text-black">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/feti_tafonao" target="_blank" class="text-pink-500 hover:text-pink-400">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/feti.tafonao" target="_blank" class="text-blue-600 hover:text-blue-500">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </div>
+    </section>
+
+    <footer class="bg-blue-900 text-white text-center py-6">
+      <p>&copy; 2025 Portofolio Fetimani Tafonao. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        function toggleDarkMode() {
+          document.body.classList.toggle("dark-mode");
+          const sunIcon = document.querySelector('.fa-sun');
+          const moonIcon = document.querySelector('.fa-moon');
+          
+          if (sunIcon && moonIcon) {
+            sunIcon.classList.toggle('hidden');
+            moonIcon.classList.toggle('hidden');
+          } else {
+            console.error("Ikon tidak ditemukan!");
+          }
+        }
+  
+        window.toggleDarkMode = toggleDarkMode;
+      });
+    </script>
+  
+  </body>
+  </html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Berita terbaru dari Universitas Trunojoyo Madura. Temukan informasi kampus, acara, kegiatan, dan prestasi mahasiswa UTM." />
+  <meta name="keywords" content="Universitas Trunojoyo Madura, UTM, Berita Kampus, Pendidikan, Mahasiswa, Kegiatan Kampus" />
+  <meta name="author" content="Tim Redaksi UTM" />
+  <title>Portal Berita Kampus | Universitas Trunojoyo Madura</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Animasi fade-in */
+    .fade-in {
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Header sticky */
+    header {
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      background-color: #004d40; /* Pastikan warna background pada header terlihat jelas */
+    }
+
+    /* Memberikan padding tambahan di bagian atas konten */
+    main, section {
+      padding-top: 80px; /* Sesuaikan dengan tinggi header */
+    }
+
+    /* Memberikan jarak pada bagian lainnya */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Menambah jarak antara elemen dalam card */
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 font-sans leading-relaxed">
+
+  <header class="bg-teal-700 text-white w-full">
+    <div class="max-w-screen-xl mx-auto px-4 py-6 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="news.png" alt="Logo Berita" class="h-10" />
+        <h1 class="text-2xl font-bold">UTM NEWS</h1>
+      </div>
+      <nav>
+        <ul class="flex space-x-6 text-white">
+          <li><a href="#" class="hover:text-teal-200 transition">Beranda</a></li>
+          <li><a href="#berita" class="hover:text-teal-200 transition">Berita</a></li>
+          <li><a href="#kontak" class="hover:text-teal-200 transition">Kontak</a></li>
+          <li><a href="#beasiswa" class="hover:text-teal-200 transition">Beasiswa</a></li>
+          <li><a href="#pengumuman" class="hover:text-teal-200 transition">Pengumuman</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative h-[60vh] fade-in">
+    <img src="utm.jpg" alt="UTM" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10 flex flex-col justify-center items-center h-full text-center text-white">
+      <h2 class="text-5xl font-extrabold drop-shadow-md">Portal Berita Kampus</h2>
+      <p class="text-xl mt-4">Berita & Informasi Terkini dari Universitas Trunojoyo Madura</p>
+    </div>
+  </section>
+
+  <!-- Berita Utama -->
+  <main id="berita" class="w-full px-4 py-12">
+    <div class="max-w-screen-xl mx-auto">
+      <article class="mb-16">
+        <img src="akademisi.jpg" alt="Akademisi Bahas RKUHAP" class="w-full h-[500px] object-cover rounded-lg mb-6" />
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">Akademisi Bahas RKUHAP di UTM</h2>
+        <p class="text-gray-700 text-lg leading-relaxed">
+          Sejumlah akademisi lintas kampus membahas urgensi perundang-undangan RKUHAP di Universitas Trunojoyo Madura (UTM) Bangkalan. Diskusi ini menyoroti dampak dan tantangan yang mungkin timbul dari revisi peraturan hukum acara pidana serta strategi 
+          pelaksanaannya di lingkungan akademik dan masyarakat. Tahapan itu sesuai dengan UU No. 2 Tahun 2002 tentang Polri yang tertuang pada Pasal 1 angka (10), (13), Pasal 13, dan Pasal 14 ayat (1) huruf G menyebutkan bahwa Polri berwenang melakukan penyelidikan dan penyidikan. KUHAP pada Pasal 1 angka (1) dan (2), serta Pasal 6 ayat (1) menegaskan kewenangan Polri dalam melakukan penyidikan tindak pidana.
+
+          Sumber: jatimnow.com
+          https://jatimnow.com/baca-76689-akademisi-lintas-kampus-bahasa-perundangundangan-rkuhap-di-utm-bangkalan
+        </p>
+      </article>
+
+      <h3 class="text-3xl font-semibold text-gray-800 border-b pb-4 mb-10">Berita Selengkapnya</h3>
+
+      <!-- Berita Lainnya -->
+      <div class="space-y-10">
+        <!-- Berita Item -->
+        <div class="flex flex-col lg:flex-row gap-6 bg-white p-6 rounded-lg shadow-md card">
+          <img src="arabia.jpg" alt="Mahasiswa Saudi Arabia" class="w-full lg:w-1/3 h-56 object-cover rounded-md" />
+          <div>
+            <h3 class="text-2xl font-semibold text-gray-800">6 Mahasiswa Saudi Arabia Ikut SNBT di UTM</h3>
+            <p class="text-gray-600 mt-2 mb-2">Kehadiran mereka bukan sekadar angka, melainkan bukti bahwa UTM mulai dilirik sebagai destinasi pendidikan tinggi dari Timur Tengah.</p>
+            <a href="https://kumparan.com/yudhi-mada/6-mahasiswa-saudi-arabia-ikut-snbt-di-utm-24wjPyXpmZW" class="text-teal-600 hover:underline">Baca Selengkapnya &rarr;</a>
+          </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-6 bg-white p-6 rounded-lg shadow-md card">
+          <img src="kerja.jpg" alt="Kerjasama UTM dan IAIN Madura" class="w-full lg:w-1/3 h-56 object-cover rounded-md" />
+          <div>
+            <h3 class="text-2xl font-semibold text-gray-800">UTM dan IAIN Madura Jalin Kerja Sama Strategis</h3>
+            <p class="text-gray-600 mt-2 mb-2">Kolaborasi untuk peningkatan Tri Dharma Perguruan Tinggi dan pengembangan SDM berkualitas.</p>
+            <a href="https://www.trunojoyo.ac.id/utm-en/universitas-trunojoyo-madura-dan-iain-madura-jalin-kerja-sama-strategis-untuk-penguatan-tri-dharma-perguruan-tinggi" class="text-teal-600 hover:underline">Baca Selengkapnya &rarr;</a>
+          </div>
+        </div>
+        <!-- Tambahkan berita lainnya jika perlu -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Beasiswa -->
+  <main id="beasiswa" class="w-full px-4 py-12">
+    <div class="flex justify-center gap-6 mt-8">
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300 w-[320px] h-[380px] flex flex-col justify-between card">
+        <h3 class="text-xl font-semibold text-blue-900 mb-4">Beasiswa Pendidikan S2 Internasional</h3>
+        <p class="text-gray-600 mb-4">Beasiswa ini ditawarkan untuk mahasiswa yang ingin melanjutkan studi S2 di universitas luar negeri. Program ini mencakup biaya pendidikan, akomodasi, dan tiket pesawat sekali berangkat.</p>
+        <a href="#beasiswa" class="bg-blue-900 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300 mt-auto text-center w-full">Baca Selengkapnya</a>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300 w-[320px] h-[380px] flex flex-col justify-between">
+        <h3 class="text-xl font-semibold text-blue-900 mb-4">Beasiswa Prestasi Akademik UTM</h3>
+        <p class="text-gray-600 mb-4">UTM memberikan beasiswa untuk mahasiswa dengan prestasi akademik yang luar biasa. Beasiswa ini mencakup pembebasan biaya kuliah untuk satu semester penuh dan bantuan biaya hidup.</p>
+        <a href="#beasiswa" class="bg-blue-900 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300 mt-auto text-center w-full">Baca Selengkapnya</a>
+      </div>
+    
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300 w-[320px] h-[380px] flex flex-col justify-between">
+        <h3 class="text-xl font-semibold text-blue-900 mb-4">Beasiswa Penelitian untuk Mahasiswa S3</h3>
+        <p class="text-gray-600 mb-4">Beasiswa ini ditujukan untuk mahasiswa S3 yang sedang melakukan penelitian di bidang teknologi dan inovasi. Program ini memberikan dana penelitian serta biaya hidup selama masa studi.</p>
+        <a href="#beasiswa" class="bg-blue-900 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300 mt-auto text-center w-full">Baca Selengkapnya</a>
+      </div>
+    </div>
+  </main>
+    
+
+<!-- Card untuk Pengumuman -->
+<main id="pengumuman" class="w-full px-4 py-12">
+  <div class="flex justify-center gap-6 mt-8">
+    <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300 w-[320px] h-[380px] flex flex-col justify-between">
+      <h3 class="text-xl font-semibold text-blue-900 mb-4">Jadwal Ujian Semester Genap 2025</h3>
+      <p class="text-gray-600 mb-4">Pengumuman bagi seluruh mahasiswa mengenai jadwal ujian semester genap 2025. Silakan cek jadwal ujian sesuai dengan program studi masing-masing di portal akademik UTM.</p>
+      <a href="#pengumuman" class="bg-blue-900 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300 mt-auto text-center">Baca Selengkapnya</a>
+    </div>     
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300 w-[320px] h-[380px] flex flex-col justify-between">
+        <h3 class="text-xl font-semibold text-blue-900 mb-4">Pendaftaran Kegiatan Ekstrakurikuler</h3>
+        <p class="text-gray-600 mb-4">Bagi mahasiswa yang tertarik untuk bergabung dalam kegiatan ekstrakurikuler di UTM, pendaftaran akan dibuka mulai 1 Mei hingga 15 Mei. Daftar segera untuk mengikuti berbagai kegiatan yang tersedia.</p>
+        <a href="#pengumuman" class="bg-blue-900 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition duration-300 mt-auto text-center">Baca Selengkapnya</a>
+      </div>
+    </div>
+    </main>
+
+  <!-- Kontak -->
+  <section id="kontak" class="bg-gray-100 py-12">
+    <div class="max-w-screen-xl mx-auto text-center px-4">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Kontak Kami</h2>
+      <p class="text-gray-700 text-lg mb-4">Hubungi kami untuk informasi lebih lanjut terkait berita kampus.</p>
+      <p>Email: <a href="mailto:info@utm.ac.id" class="text-teal-600">info@utm.ac.id</a></p>
+    </div>
+  </section>
+
+  <footer class="bg-teal-700 text-white text-center py-4">
+    <p>&copy; 2025 Universitas Trunojoyo Madura</p>
+  </footer>
+
+</body>
+</html>
